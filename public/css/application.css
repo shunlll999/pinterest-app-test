@@ -1,0 +1,23 @@
+.app-title {
+  display: flex;
+  background-color: #ccc; }
+  .app-title h1 {
+    padding-left: 1rem; }
+  .app-title ul {
+    list-style-type: none;
+    display: flex; }
+    .app-title ul li {
+      padding: 1rem 0 0 1rem; }
+
+.board-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between; }
+  .board-list__item {
+    padding-left: 1rem;
+    cursor: pointer; }
+  .board-list__img {
+    width: 150px; }

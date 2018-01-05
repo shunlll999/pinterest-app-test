@@ -1,0 +1,17 @@
+.board-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+
+  &__item {
+    padding-left: 1rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 150px;
+  }
+}

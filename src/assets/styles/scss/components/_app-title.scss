@@ -1,0 +1,17 @@
+.app-title {
+  display: flex;
+  background-color: #ccc;
+
+  h1 {
+    padding-left: 1rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      padding: 1rem 0 0 1rem;
+    }
+  } 
+}
