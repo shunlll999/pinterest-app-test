@@ -28,6 +28,10 @@ class BoardRoute extends Component {
     this.setState({pin: boardName, selectedPin: true});
   }
 
+  onCloseHandler(){
+    this.setState({selectedPin: false});
+  }
+
   renderBoard() {
     const { boards } = this.props.board;
     const { data } = boards;
@@ -48,7 +52,7 @@ class BoardRoute extends Component {
     return (
       <div>
         {this.renderBoard()}
-        <ViewPin pinData={this.state.pin} show={this.state.selectedPin}/>
+        <ViewPin pinData={this.state.pin} show={this.state.selectedPin} onClick={this.onCloseHandler.bind(this)}/>
       </div>
     );
   }
